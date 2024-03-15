@@ -10,17 +10,23 @@ namespace Practice1_
 
         //Значення тау (золоте сечіння)
         public static double tau = (Math.Sqrt(5) - 1) / 2; 
+        
+        //Делегат для алгебраїчної функції
         public delegate double Function(double x);
+        
+        //Перша функція
         static double f1(double x)
         {
             return Math.Pow(10 - x, 2);
         }
 
+        //Друга функція
         static double f2(double x)
         {
             return 3 * Math.Pow(x, 4) + Math.Pow(x - 1, 2);
         }
 
+        //Пошук мінімума
         static double GoldenRatioSearch(double a, double b, double epsilon, Function f, StreamWriter writer)
         {
             double x1 = a + (1 - tau) * (b - a);
