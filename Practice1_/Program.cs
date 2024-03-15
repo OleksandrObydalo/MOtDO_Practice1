@@ -8,6 +8,7 @@ namespace Practice1_
     class Program
     {
 
+        //Значення тау (золоте сечіння)
         public static double tau = (Math.Sqrt(5) - 1) / 2; 
         public delegate double Function(double x);
         static double f1(double x)
