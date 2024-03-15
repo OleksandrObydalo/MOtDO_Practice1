@@ -81,6 +81,7 @@ namespace Practice1_
 
             string filePath = "function1.txt";
 
+            //Запис у файл "function1.txt"
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 double minimum = GoldenRatioSearch(a, b, epsilon, f1, writer);
@@ -103,6 +104,7 @@ namespace Practice1_
             a = 0;
             b = 4;
 
+            //Запис у файл "function2.txt"
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 double minimum = GoldenRatioSearch(a, b, epsilon, f2, writer);
